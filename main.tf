@@ -5,7 +5,7 @@ resource "aws_instance" "server1" {
   ami = var.ami
   instance_type= var.instance_type
   tags = {
-    name = "sever1"
+    name = "sever2"
   }
 
   user_data = file( "script.sh")

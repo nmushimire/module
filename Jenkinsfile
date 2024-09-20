@@ -32,7 +32,7 @@ pipeline {
 
     //     stage('Apply Terraform') {
     //         steps {
-    //             // Apply the Terraform plan
+    //             // Apply the Terraform plan 1
     //             input message: 'Approve Terraform apply?', ok: 'Apply'
     //             sh 'terraform apply tfplan'
     //         }

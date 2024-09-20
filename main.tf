@@ -1,12 +1,12 @@
 provider "aws" {
-    region = "us-east-1"
+    region = var.region_name
 }
 resource "aws_instance" "server1" {
-  ami = "ami-0a5c3558529277641"
-  instance_type = "t2.micro"
-
+  ami = var.ami
+  instance_type= var.instance_type
+  
   tags = {
-    name = "server1"
+    name = "sever1"
   }
 
   user_data = file( "script.sh")

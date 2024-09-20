@@ -5,7 +5,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Checkout your code from a version control system
-                git url: 'https://github.com/your-repo/terraform-code.git', branch: 'main'
+                git url: 'https://github.com/nmushimire/module.git', branch: 'main'
             }
         }
 
